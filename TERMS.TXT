@@ -98,6 +98,7 @@ What softwares, products, and services these terms apply to:
         10. Olive OS SMPL
         11. OliveWeb Clipboard
         12. OliveWeb Softwriter
+        13. OliveWeb CodeNote
     Web Products:
         1. This website (olivewebsoftware.github.io/oliveweb)
         2. kkMessenger
