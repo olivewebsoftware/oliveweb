@@ -1,0 +1,28 @@
+#mainlabel {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#gimme {
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightblue;
+}
+#me {
+    right: auto;
+}
+#searchareaname {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+#message {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+#social {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+#notice {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+/* never gonna give you up never gonna let you down never gonna run around and desert you */
