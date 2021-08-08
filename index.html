@@ -1,73 +1,315 @@
+
 <!DOCTYPE html>
 <!--(C) 2021 OliveWeb Software-->
 <!--The source code for this website cannot be copied and pasted under a different name.-->
 <html>
-<head>
-<link rel="shortcut icon" type="image/jpg" href="unnamed.jpg"/>
-<title>OliveWeb Website</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<h1 id="mainlabel">OliveWeb Software</h1> <br>
-<hr>
-<p> </p>
-<button style="font-family: Arial, Helvetica, sans-serif; color: blue; font-weight: bold;" onclick="advertiseQuery()">Advertise!</button>
-<br>
-<br>
-<button id="1" style="color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" onclick="oliveOS()">Olive OS Home</button>
-<br>
-<br>
-<button id="1" style="color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" onclick="codeNote()">OliveWeb CodeNote</button>
-<br>
-<br>
-<button id="1" style="color:black; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" onclick="clipBoard()">Download Center</button>
-<br>
-<br>
-<button id="1" style="color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" onclick="feedBack()">Feedback and Support Center</button>
-<br>
-<br>
-<button id="1" style="color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" onclick="webStuff()">Web Products</button>
-<br>
-<br>
-<button id="1" style="color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" onclick="termsofUse()">Read our Terms of Use</button>
-<script>
-    function advertiseQuery() {
-        window.location.replace("index9.html")
-    }
-    function oliveOS() {
-        window.location.replace("index2.html")
-    }
-    function uOffice() {
-        window.location.replace("index3.html")
-    }
-    function codeNote() {
-        window.location.replace("index8.html")
-    }
-    function clipBoard() {
-        window.location.replace("index5.html")
-    } 
-    function feedBack() {
-        window.location.replace("index6.html")
-    }
-    function webStuff() {
-        window.location.replace("index7.html")
-    }
-    function termsofUse() {
-        window.location.replace("TERMS.TXT")
-    }
-</script>
-<p id="message">Welcome to our updated website! <br> We hope it looks better then the last one! We will <br> Be upgrading all the pages on <br> this site.</p>
-<p id="notice">If any of these pages don't work or <br> 404, it is GitHub not working or <br> not updating the page.</p>
-<p id="social">Check out these other links:</p> <br>
-<a style="font-family: Arial, Helvetica, sans-serif; text-align: left; font-size: small" href="mailto:kk.online@mail.com">Our Email</a>
-<p>  </p>
-<a style="font-family: Arial, Helvetica, sans-serif; text-align: left; font-size: small" href="https://www.instagram.com/oliveweb_software/">Follow our Instagram!</a>
-<p>  </p>
-<a style="font-family: Arial, Helvetica, sans-serif; text-align: left; font-size: small;" href="https://www.youtube.com/channel/UCO7Y5aew9WBv4DjPr74v7eA">Subscribe to Our YouTube!</a>
-<p>  </p>
-<iframe src="https://olivewebsoftware.github.io/ads/" width="816" height="157">Please wait...</iframe>
-</body>
-<!--
+    <head style="background-color: gray;">
+       <title>OliveWeb Software</title>
+       <link rel="shortcut icon" type="image/jpg" href="unnamed.jpg"/>
+    </head>
+    <body style="background-color: lightgray;">
+        <div class="menu-bar">
+            <br>
+            <h1 id="mainlabel">OliveWeb Software</h1>
+            <br>
+            <button id="one" onclick="ad()">Advertise!</button>
+            <button id="two" onclick="os()">Olive OS Home</button>
+            <button id="three" onclick="cn()">OliveWeb CodeNote</button>
+            <button id="four" onclick="dn()">Download Center</button>
+            <button id="five" onclick="fb()">Feedback and Support Center</button>
+            <button id="six" onclick="wp()">Web Products</button>
+            <button id="seven" onclick="tu()">Read our Terms of Use</button>
+            <br>
+            <br>
+        </div>
+        <h1 id="header">Welcome to OliveWeb's Website!</h1>
+        <p id="other-msg">This is the site where you can download all <br> of OliveWeb's software, games, and documentation. <br> We redesigned the homepage to make it easier to find what you need. Enjoy!</p>
+            <div class="show-content">
+                <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: large; text-align: center;">Featured:</p>
+                <img src="olimg.png" width="1453" height="575" alt="img" class="center">
+                <h2 id="finder">Here are some suggestions:</h2>
+                <div class="content-things">
+                    <img src="advert.png" width="60" height="60" onclick="ad()">
+                    <img src="olive.png" width="60" height="60" onclick="os()">
+                    <img src="get.png" width="60" height="60" onclick="dn()">
+                </div>
+                <div class="css-sucks">
+                    <button style="border: none; background-color: lightgray;">Advertise</button>
+                    <button style="border: none; background-color: lightgray;">Download <br> Olive OS</button>
+                    <button style="border: none; background-color: lightgray;">Download <br> Software</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: x-large; text-align: center;">Check out Olive OS:</h1>
+            <iframe style="text-align: center;" width="100%" height="480" src="https://www.youtube.com/embed/OqRyaH924pE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            <br>
+            <br>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">This is Olive OS Home. One of our biggest projects yet. <br> A virtual OS written in Visual Basic that is free to <br> download anytime, anywhere. It includes a ton of <br> built-in apps and more. Come check it out!</p>
+            <div class="one-thing">
+                <button onclick="os()" id="dl">Download Now</button>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <h1 id="shameless-self-promotion">Check out our social media:</h1>
+            <br>
+            <br>
+            <div class="sm">
+                <button onclick="yt()" id="yt">YouTube</button>
+                <br>
+                <br>
+                <button onclick="ig()" id="ig">Instagram</button>
+                <br>
+                <br>
+            </div>
+            <hr>
+            <br>
+            <br>
+            <div class="bottom">
+                <h1 id="comp">  OliveWeb Software</h1>
+                <p id="comp2">  &copy 2021 OliveWeb Software</p>
+            </div>
+            <!--?subject=[subject goes here]-->
+            <div class="c-options">
+                <h1 id="more-op">Contact Options:</h1>
+                <a id="a1" href="mailto:kk.online@mail.com?subject=Report a Bug">Report a Bug</a>
+                <a id="a2" href="mailto:kk.online@mail.com?subject=General Contact">Contact Us by Email</a>
+                <a id="a3" href="mailto:kk.online@mail.com?subject=Request a Feature">Request a Feature</a>
+                <a id="a4" href="https://docs.google.com/forms/d/e/1FAIpQLSd4tNcHNWx-OJ9vvgSyADmspPQJPzqg1pNsnCw5P1_QGJw67w/viewform?embedded=true">Go to Contact Form</a>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <iframe src="https://olivewebsoftware.github.io/ads/" width="816" height="157">Please wait...</iframe>
+            <br>
+        <style>
+            .c-options {
+                text-align: center;
+            }
+            #more-op {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            #a1 {
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            #a2 {
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            #a3 {
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            #a4 {
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            #contact {
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: right;
+            }
+            #comp {
+                text-align: left;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #comp2 {
+                text-align: left;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+            }
+            .bottom {
+                background-color: gray;
+            }
+            .sm {
+                text-align: center;
+                align-content: center;
+            }
+            #ig {
+                border: none;
+                background-color:hotpink;
+                color:white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+                padding: 10px 30px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            #yt {
+                border: none;
+                background-color: red;
+                color:white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+                padding: 10px 30px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            #shameless-self-promotion {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .one-thing {
+                text-align: center;
+            }
+            #dl {
+                border: none;
+                background-color:green;
+                color:white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+                padding: 10px 30px;
+                font-weight: bold;
+            }
+            .css-sucks {
+                text-align: center;
+            }
+            .my {
+                text-align: center;
+                align-items:center;
+            }
+            .content-things {
+                text-align: center;
+            }
+            #finder {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+            #header {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #other-msg {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .menu-bar {
+                text-align: center;
+                background-color: gray;
+                width: 100%;
+                height: auto;
+            }
+            #mainlabel {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: xx-large;
+            }
+            #one {
+                border: none;
+                background-color: blue;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px 30px;
+                font-size: large;
+                cursor: pointer;
+            }
+            #two {
+                border: none;
+                background-color:silver;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px 30px;
+                font-size: large;
+                cursor: pointer;
+            }
+            #three {
+                border: none;
+                background-color:silver;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px 30px;
+                font-size: large;
+                cursor: pointer;
+            }
+            #four {
+                border: none;
+                background-color:silver;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px 30px;
+                font-size: large;
+                cursor: pointer;
+            }
+            #five {
+                border: none;
+                background-color:silver;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px 30px;
+                font-size: large;
+                cursor: pointer;
+            }
+            #six {
+                border: none;
+                background-color:silver;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px 30px;
+                font-size: large;
+                cursor: pointer;
+            }
+            #seven {
+                border: none;
+                background-color:silver;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px 30px;
+                font-size: large;
+                cursor: pointer;
+            }
+        </style>
+        <script>
+            function ad() {
+                window.location.replace("index.html")
+            }
+            function os() {
+                window.location.replace("index2.html")
+            }
+            function cn() {
+                window.location.replace("index8.html")
+            }
+            function dn() {
+                window.location.replace("index5.html")
+            }
+            function fb() {
+                window.location.replace("index6.html")
+            }
+            function wp() {
+                window.location.replace("index7.html")
+            }
+            function tu() {
+                window.location.replace("TERMS.TXT")
+            }
+            function yt() {
+                window.location.replace("https://www.youtube.com/channel/UCO7Y5aew9WBv4DjPr74v7eA")
+            }
+            function ig() {
+                window.location.replace("https://www.instagram.com/oliveweb_software/")
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-36THEKNQ2G"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-36THEKNQ2G');
+        </script>
+        </body>
+        <!--
        .__(.)< (MEOW)
         \___)   
  ~~~~~~~~~~~~~~~~~~
