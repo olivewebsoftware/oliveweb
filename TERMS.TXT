@@ -79,10 +79,9 @@ Who is and isn't allowed to use our software:
         e. Freelance users
         f. Anything not listed in the "Not Allowed"
     Not Allowed:
-        a. Furries
-        d. Scammers
-        e. Criminals
-        f. Things that are bad
+        a. Scammers
+        b. Criminals
+        c. Things that are bad
 
 What softwares, products, and services these terms apply to:
     Software:
