@@ -1,0 +1,63 @@
+Olive OS Web Edition Open Source Terms:
+
+Olive OS M is on GitHub:
+[https://github.com/olivewebsoftware/OliveOSWebEdition]
+
+Olive OS M is an open source project started by OliveWeb. Anyone anywhere can contribute code via GitHub and download, distribute,
+mod, or really anything with Olive OS Web Edition. Generic rules still do apply, and are listed below.
+
+Contributing Code:
+The code you contribute cannot contain malware, spyware, adware, PUPs, and any code where malicious code is present. All contributions
+are scanned with VirusTotal, inspected, and tested on virtual machines to make sure it contains no malicious code.
+The code you contribute cannot contain broken, non-funtional, poorly-written, or code that is riddled with bugs. If the code works
+and doesn't break or throw an exception, we will include it.
+The code you contribute must be written in any of these languages:
+Visual Basic
+HTML
+CSS
+JavaScript
+PHP
+
+Olive OS Web Edition is written around the idea of web apps. To create web apps, use HTML, CSS, or JS. To create base apps or the
+core OS, use Visual Basic. Stuff like C#, F#, C++, or things like that cannot be used.
+
+Web App Rules 
+
+No jQuery (required)
+No XML (optional)
+For JavaScript, use var not let. (this is to maintain compalibility) [required]
+There cannot be any external JS, CSS, TXT, PHP, or HTML files; no external files (to maintain fully working apps) (optional)
+The rest are optional:
+[If someone finds out how to add external files, then external files will be allowed.]
+For images, they have to be downloaded from a website or server; they cannot be external.
+If the WebBrowser element returns a script error, check your code before contributing it.
+Always test web apps with the webbrowser element in visual studio or IE before sending to make sure it works.
+
+Visual Basic Rules
+
+All Required:
+No Visual Studio plugins (Unnessasary/unwanted DLLs)
+No visual basic mods (Awesomemium, etc.)
+Images/Files must be in project resources, not from a local machine.
+
+
+For Web Apps & Visual Basic:
+
+As long as the code works, it will be accepted!
+
+
+Credits and Code:
+If you contribute more than 1 line of code, your name will be featured in the credits.
+
+If you mod Olive OS Web Edition or edit it, please make the code for that modded version publicly available. If you don't, you are
+stealing everyone's hard work.
+
+All code is publicly online for anyone to view or contribute.
+
+Why Open Source?
+
+We want this version of Olive OS to be open source so the community can edit, see, or use the code. We want this software to be free
+for everyone to use, edit, or view the code. We plan for Olive OS Web Edition to be a very cool project, by the community.
+
+That's all!
+For questions or concerns, please contact kk.online@mail.com
