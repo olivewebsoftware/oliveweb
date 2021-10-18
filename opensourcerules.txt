@@ -1,9 +1,9 @@
 Olive OS Web Edition Open Source Terms:
 
-Olive OS M is on GitHub:
+Olive OS Web Edition is on GitHub:
 [https://github.com/olivewebsoftware/OliveOSWebEdition]
 
-Olive OS M is an open source project started by OliveWeb. Anyone anywhere can contribute code via GitHub and download, distribute,
+Olive OS Web Edition is an open source project started by OliveWeb. Anyone anywhere can contribute code via GitHub and download, distribute,
 mod, or really anything with Olive OS Web Edition. Generic rules still do apply, and are listed below.
 
 Contributing Code:
