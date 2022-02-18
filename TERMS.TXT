@@ -1,5 +1,5 @@
 TERMS OF USE OF OLIVEWEB SERVICES AND SOFTWARE
-Last Updated: 5/20/2021
+Last Updated: 2/17/2022
 
 Privacy
 Here at OliveWeb, we make our software so it is software.
@@ -13,7 +13,7 @@ Some of our software can be used to publish things online, and send
 email. In the future, we will have software that can publish things online.
 They will all be websites. Anything you publish to the internet using OliveWeb software
 is your responsibility (and your problem) so we are not resposible for
-what you do online.
+what you do online with our software.
 
 Rules that abide to ALL of our software.
 1. Don't do anything illegal
@@ -33,7 +33,7 @@ to others, and harmful to you.
 10. Don't help anyone break these Terms of Use 
 
 Software License Agreement
-1. All OliveWeb software is NOT open source
+1. All OliveWeb software is not open source (execpt Olive OS Web Edition)
 2. This software cannot be resold illegally online
 3. This software cannot be pirated
 4. You cannot do anything with the software code below:
@@ -99,6 +99,10 @@ What softwares, products, and services these terms apply to:
         12. OliveWeb Softwriter
         13. OliveWeb CodeNote
         14. OliveWeb UltraMedia
+        15. Olive OS M
+        16. Olive OS Weh Edition
+        17. Olive OS S
+        18. OliveWeb Music Player
     Web Products:
         1. This website (olivewebsoftware.github.io/oliveweb)
         2. kkMessenger
@@ -107,10 +111,7 @@ What softwares, products, and services these terms apply to:
         5. kkMessenger HTML File
     Services:
         1. OliveWeb Advertising
-        2. kkAds
-        3. kkMessenger
-        4. kkVideo
-        5. SUB Newspaper
+        2. Our Online Services
 
 If these terms are broken, you will be unable to use any OliveWeb service, software,
 or web product forever. 
