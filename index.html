@@ -1,311 +1,87 @@
-
 <!DOCTYPE html>
-<!--(C) 2021 OliveWeb Software-->
-<!--The source code for this website cannot be copied and pasted under a different name.-->
-<html>
-    <head style="background-color: gray;">
-       <title>OliveWeb Software</title>
-       <link rel="shortcut icon" type="image/jpg" href="unnamed.jpg"/>
-    </head>
-    <body style="background-color: lightgray;">
-        <div class="menu-bar">
-            <br>
-            <h1 id="mainlabel">OliveWeb Software</h1>
-            <br>
-            <button id="one" onclick="ad()">Advertise!</button>
-            <button id="two" onclick="os()">Olive OS S</button>
-            <button id="three" onclick="omp()">OliveWeb Music Player</button>
-            <button id="three" onclick="op()">OliveWeb Photo</button>
-            <button id="three" onclick="cn()">Submit an App</button>
-            <button id="four" onclick="dn()">Download Center</button>
-            <button id="five" onclick="fb()">Feedback and Support Center</button>
-            <button id="seven" onclick="tu()">Read our Terms of Use</button>
-            <br>
-            <br>
-        </div>
-        <h1 id="header">Welcome to OliveWeb's Website!</h1>
-        <p id="other-msg">This is the site where you can download all <br> of OliveWeb's software, games, and documentation. <br> We redesigned the homepage to make it easier to find what you need. Enjoy!</p>
-            <div class="show-content">
-                <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: large; text-align: center;">Featured:</p>
-                <img src="olimg.png" width="1453" height="575" alt="img" class="center">
-                <h2 id="finder">Here are some suggestions:</h2>
-                <div class="content-things">
-                    <img src="olive.png" width="60" height="60" onclick="os()">
-                    <img src="get.png" width="60" height="60" onclick="dn()">
-                </div>
-                <div class="css-sucks">
-                    <button style="border: none; background-color: lightgray;">Download <br> Olive OS</button>
-                    <button style="border: none; background-color: lightgray;">Download <br> Software</button>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-         <br>
-            <br>
-            <br>
-            <br>
-            <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: x-large; text-align: center;">Check out Olive OS S:</h1>
-        <div class="svr">
-        <iframe style="text-align: center;" width="560" height="315" src="https://www.youtube.com/embed/ggcBGzK39WE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-            <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Introducing Olive OS S. The new version of Olive OS <br>
-        that comes with a full app store, plugins support, great built in applications, and much more.</p>
-            <div class="one-thing">
-                <button onclick="os()" id="dl">Download Now</button>
-            </div>
-            <br>
-            <br>
-            <hr>
-            <br>
-            <br>
-            <h1 id="shameless-self-promotion">Check out our social media:</h1>
-            <br>
-            <br>
-            <div class="sm">
-                <button onclick="yt()" id="yt">YouTube</button>
-                <br>
-                <br>
-                <button onclick="ig()" id="ig">Instagram</button>
-                <br>
-                <br>
-            </div>
-            <hr>
-            <br>
-            <br>
-            <div class="bottom">
-                <h1 id="comp">  OliveWeb Software</h1>
-                <p id="comp2">  &copy 2022 OliveWeb Software</p>
-            </div>
-            <!--?subject=[subject goes here]-->
-            <div class="c-options">
-                <h1 id="more-op">Contact Options:</h1>
-                <a id="a1" href="mailto:olivewebsoftware@gmail.com?subject=Report a Bug">Report a Bug</a>
-                <a id="a2" href="mailto:olivewebsoftware@gmail.com?subject=General Contact">Contact Us by Email</a>
-                <a id="a3" href="mailto:olivewebsoftware@gmail.com?subject=Request a Feature">Request a Feature</a>
-                <a id="a4" href="https://docs.google.com/forms/d/e/1FAIpQLSd4tNcHNWx-OJ9vvgSyADmspPQJPzqg1pNsnCw5P1_QGJw67w/viewform?embedded=true">Go to Contact Form</a>
-            </div>
-            <br>
-            <hr>
-            <br>
-            <iframe src="https://olivewebsoftware.github.io/ads/" width="816" height="157">Please wait...</iframe>
-            <br>
-        <style>
-            .svr {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .c-options {
-                text-align: center;
-            }
-            #more-op {
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            #a1 {
-                font-size: large;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            #a2 {
-                font-size: large;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            #a3 {
-                font-size: large;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            #a4 {
-                font-size: large;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            #contact {
-                font-size: large;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: right;
-            }
-            #comp {
-                text-align: left;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            #comp2 {
-                text-align: left;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: large;
-            }
-            .bottom {
-                background-color: gray;
-            }
-            .sm {
-                text-align: center;
-                align-content: center;
-            }
-            #ig {
-                border: none;
-                background-color:hotpink;
-                color:white;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: large;
-                padding: 10px 30px;
-                font-weight: bold;
-                cursor: pointer;
-            }
-            #yt {
-                border: none;
-                background-color: red;
-                color:white;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: large;
-                padding: 10px 30px;
-                font-weight: bold;
-                cursor: pointer;
-            }
-            #shameless-self-promotion {
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .one-thing {
-                text-align: center;
-            }
-            #dl {
-                border: none;
-                background-color:green;
-                color:white;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: large;
-                padding: 10px 30px;
-                font-weight: bold;
-                cursor: pointer;
-            }
-            .css-sucks {
-                text-align: center;
-            }
-            .my {
-                text-align: center;
-                align-items:center;
-            }
-            .content-things {
-                text-align: center;
-            }
-            #finder {
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .center {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-            }
-            #header {
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            #other-msg {
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .menu-bar {
-                text-align: center;
-                background-color: gray;
-                width: 100%;
-                height: auto;
-            }
-            #mainlabel {
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: xx-large;
-            }
-            #one {
-                border: none;
-                background-color: blue;
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                padding: 10px 30px;
-                font-size: large;
-                cursor: pointer;
-            }
-            #two {
-                border: none;
-                background-color:silver;
-                font-family: Arial, Helvetica, sans-serif;
-                padding: 10px 30px;
-                font-size: large;
-                cursor: pointer;
-            }
-            #three {
-                border: none;
-                background-color:silver;
-                font-family: Arial, Helvetica, sans-serif;
-                padding: 10px 30px;
-                font-size: large;
-                cursor: pointer;
-            }
-            #four {
-                border: none;
-                background-color:silver;
-                font-family: Arial, Helvetica, sans-serif;
-                padding: 10px 30px;
-                font-size: large;
-                cursor: pointer;
-            }
-            #five {
-                border: none;
-                background-color:silver;
-                font-family: Arial, Helvetica, sans-serif;
-                padding: 10px 30px;
-                font-size: large;
-                cursor: pointer;
-            }
-            #seven {
-                border: none;
-                background-color:silver;
-                font-family: Arial, Helvetica, sans-serif;
-                padding: 10px 30px;
-                font-size: large;
-                cursor: pointer;
-            }
-        </style>
-        <script>
-            function ad() {
-                window.location.replace("index9.html")
-            }
-            function os() {
-                window.location.replace("index12.html")
-            }
-            function cn() {
-                window.location.replace("index12.html")
-            }
-            function dn() {
-                window.location.replace("index5.html")
-            }
-            function fb() {
-                window.location.replace("index6.html")
-            }
-            function tu() {
-                window.location.replace("TERMS.TXT")
-            }
-            function yt() {
-                window.location.replace("https://www.youtube.com/channel/UCO7Y5aew9WBv4DjPr74v7eA")
-            }
-            function ig() {
-                window.location.replace("https://www.instagram.com/oliveweb_software/")
-            }
-             function omp() {
-                window.location.replace("https://olivewebsoftware.github.io/oliveweb/index10.html")
-            }
-              function op() {
-                window.location.replace("https://olivewebsoftware.github.io/oliveweb/index13.html")
-            }
-        </script>
-        </body>
-        <!--
-       .__(.)< (MEOW)
-        \___)   
- ~~~~~~~~~~~~~~~~~~
--->
+<html lang="en">
+<head>
+<title>OliveWeb Software</title>
+<link rel="shortcut icon" type="image/jpg" href="logo.png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/index12.html">Olive OS S</a>
+    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/index5.html">Download Center</a>
+    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/olivewebconnect/index.html">OliveWeb CONNECT</a>
+    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://docs.google.com/forms/d/e/1FAIpQLSciWCDbpjK9vjUU9H9MvBLeUCAdeU9kZxp6Dk2GKl7hRj2uGg/viewform?usp=sf_link">Submit App To Olive OS SE Store</a>
+    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"  href="https://olivewebsoftware.github.io/oliveweb/index6.html">Support</a>
+    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"  href="https://www.youtube.com/channel/UCO7Y5aew9WBv4DjPr74v7eA">YouTube</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">OliveWeb Software</h1>
+  <p class="w3-xlarge">Welcome to OliveWeb's website!</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Olive OS S</h1>
+      <h5 class="w3-padding-32">Introducing Olive OS S! <br> It comes with a bunch of new features, and <br> an app store!</h5>
+    </div>
+
+    <div class="w3-third w3-center">
+        <iframe width="700" height="500" src="https://www.youtube.com/embed/ggcBGzK39WE" title="Introducing Olive OS S - New VB.NET OS #vb.net #os #programming #windows" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">&copy 2023 OliveWeb Software</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+   
+ </div>
+ <p>Template from: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
 </html>
