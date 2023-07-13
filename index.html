@@ -13,6 +13,35 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+   /* Styles for the slider container */
+    .slider-container {
+      width: 400px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Styles for the slider images */
+    .slider-image {
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+
+    /* Styles for the image labels */
+    .slider-label {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    /* Styles for the image hyperlinks */
+    .slider-link {
+      color: #fff;
+      text-decoration: none;
+    }
 </style>
 </head>
 <body>
@@ -48,6 +77,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <h1 class="w3-margin w3-jumbo">OliveWeb Software</h1>
   <p class="w3-xlarge">Welcome to OliveWeb's website!</p>
 </header>
+   <div class="slider-container">
+    <img class="slider-image" src="image1.jpg" alt="Image 1">
+    <img class="slider-image" src="image2.jpg" alt="Image 2">
+
+    <div class="slider-label">
+      <a class="slider-link" href="https://olivewebsoftware.github.io/oliveweb/oose/">Olive OS SE</a>
+    </div>
+    <div class="slider-label">
+      <a class="slider-link" href="http://68.108.66.195:5000/connect/">OliveWeb CONNECT</a>
+    </div>
+  </div>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
@@ -81,6 +121,38 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+   // JavaScript for image slider functionality
+    let slideIndex = 0;
+    const images = document.getElementsByClassName("slider-image");
+    const labels = document.getElementsByClassName("slider-label");
+
+    // Function to show the current slide
+    function showSlide() {
+      // Hide all images and labels
+      for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+        labels[i].style.display = "none";
+      }
+
+      // Display the current slide
+      images[slideIndex].style.display = "block";
+      labels[slideIndex].style.display = "block";
+    }
+
+    // Function to change to the next slide
+    function nextSlide() {
+      slideIndex++;
+      if (slideIndex >= images.length) {
+        slideIndex = 0; // Wrap around to the first slide
+      }
+      showSlide();
+    }
+
+    // Initial setup
+    showSlide();
+
+    // Set interval to change slides every 3 seconds
+    setInterval(nextSlide, 3000);
 </script>
 
 </body>
