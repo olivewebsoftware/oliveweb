@@ -54,7 +54,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a class="w3-bar-item w3-button w3-padding-large w3-white">OliveWeb Software</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" id="acc" href="http://68.108.66.195:5000/connect/account/">OliveWeb Account</a>
+    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="http://68.108.66.195:5000/connect/account/">OliveWeb Account</a>
     <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/oose/">Olive OS SE</a>
     <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/index5.html">Download Center</a>
     <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="http://68.108.66.195:5000/connect/">OliveWeb CONNECT</a>
@@ -105,32 +105,6 @@ function myFunction() {
   } else { 
     x.className = x.className.replace(" w3-show", "");
   }
-}
-window.onload = function() {
-    var usernameCookie = getCookie("oliveweb_username");
-    var passwordCookie = getCookie("oliveweb_password");
-
-    var signInLink = document.getElementById("acc");
-
-    if (usernameCookie && passwordCookie) {
-        document.getElementById("acc").textContent = "Hello, " + usernameCookie;
-        signInLink.style.display = "inline"; // Show the "Sign Out" link
-        signInLink.addEventListener("click", function() {
-           window.location.href = "oliveweb.ddns.net/connect/account/dashboard";
-        });
-    } else {
-        signInLink.textContent = "Sign In";
-        signInLink.style.display = "inline"; // Show the "Sign In" link
-        signInLink.href = "http://oliveweb.ddns.net/connect/account";
-    }
-};
- document.getElementById('acc').onclick = function() {
-    document.cookie = "referrer=site; expires=0; path=/";
-};
- function getCookie(name) {
-    var value = "; " + document.cookie;
-    var parts = value.split("; " + name + "=");
-    if (parts.length === 2) return parts.pop().split(";").shift();
 }
 </script>
 
