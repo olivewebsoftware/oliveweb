@@ -114,12 +114,9 @@ window.onload = function() {
 
     if (usernameCookie && passwordCookie) {
         document.getElementById("acc").textContent = "Hello, " + usernameCookie;
-        signInLink.textContent = "Sign Out";
         signInLink.style.display = "inline"; // Show the "Sign Out" link
         signInLink.addEventListener("click", function() {
-            deleteCookie("oliveweb_username");
-            deleteCookie("oliveweb_password");
-            window.location.reload();
+           window.location.href = "oliveweb.ddns.net/connect/account/dashboard";
         });
     } else {
         signInLink.textContent = "Sign In";
@@ -128,7 +125,7 @@ window.onload = function() {
     }
 };
  document.getElementById('acc').onclick = function() {
-    document.cookie = "referrer=search; expires=0; path=/";
+    document.cookie = "referrer=site; expires=0; path=/";
 };
  function getCookie(name) {
     var value = "; " + document.cookie;
