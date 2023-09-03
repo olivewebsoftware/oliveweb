@@ -1,112 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>OliveWeb Software</title>
-<link rel="shortcut icon" type="image/png" href="logo.png"/>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
- /* Styles for the slider container */
-    .slider-container {
-      width: 400px;
-      height: 300px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      overflow: hidden;
+    <title>OliveWeb Software</title>
+    <link rel="shortcut icon" type="image/png" href="logo.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif;
     }
 
-    /* Styles for the slider images */
-    .slider-image {
-      width: 100%;
-      height: 100%;
-      display: none;
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif;
     }
 
-    /* Styles for the image labels */
-    .slider-label {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      color: #fff;
-      font-size: 18px;
+    .fa-anchor, .fa-coffee {
+        font-size: 200px;
     }
 
-    /* Styles for the image hyperlinks */
-    .slider-link {
-      color: #fff;
-      text-decoration: none;
+    /* Add your custom styles here */
+    .hero-section {
+        background-image: url('your-image.jpg'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: black;
+        padding: 150px 0;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .content-section {
+        text-align: center;
+    }
+
+.w3-twothird {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+
+    .footer {
+        background-color: #000;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .product-panels {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
     }
 </style>
+
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a class="w3-bar-item w3-button w3-padding-large w3-white">OliveWeb Software</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="http://68.108.66.195:5000/connect/account/">OliveWeb Account</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/oose/">Olive OS SE</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/index5.html">Download Center</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="http://68.108.66.195:5000/connect/">OliveWeb CONNECT</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://docs.google.com/forms/d/e/1FAIpQLSciWCDbpjK9vjUU9H9MvBLeUCAdeU9kZxp6Dk2GKl7hRj2uGg/viewform?usp=sf_link">Submit App To Olive OS SE Store</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/index6.html">Support</a>
-    <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://www.youtube.com/channel/UCO7Y5aew9WBv4DjPr74v7eA">YouTube</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a class="w3-bar-item w3-button w3-padding-large" href="http://68.108.66.195:5000/connect/account/">OliveWeb Account</a>
-    <a class="w3-bar-item w3-button w3-padding-large" href="https://olivewebsoftware.github.io/oliveweb/oose/">Olive OS SE</a>
-    <a class="w3-bar-item w3-button w3-padding-large" href="https://olivewebsoftware.github.io/oliveweb/index5.html">Download Center</a>
-    <a class="w3-bar-item w3-button w3-padding-large" href="http://68.108.66.195:5000/connect/">OliveWeb CONNECT</a>
-     <a class="w3-bar-item w3-button w3-padding-large" href="https://docs.google.com/forms/d/e/1FAIpQLSciWCDbpjK9vjUU9H9MvBLeUCAdeU9kZxp6Dk2GKl7hRj2uGg/viewform?usp=sf_link">Submit Apps To Olive OS SE Store</a>
-     <a class="w3-bar-item w3-button w3-padding-large" href="https://olivewebsoftware.github.io/oliveweb/index6.html">Support</a>
-    <a class="w3-bar-item w3-button w3-padding-large" href="https://www.youtube.com/channel/UCO7Y5aew9WBv4DjPr74v7eA">YouTube</a>
-  </div>
-</div>
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Olive OS SE</h1>
-      <h5 class="w3-padding-32">Introducing Olive OS SE!</h5>
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a class="w3-bar-item w3-button w3-padding-large w3-white">OliveWeb Software</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="http://68.108.66.195:5000/connect/account/">OliveWeb Account</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/oose/">Olive OS SE</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/index5.html">Download Center</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="http://68.108.66.195:5000/connect/">OliveWeb CONNECT</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://docs.google.com/forms/d/e/1FAIpQLSciWCDbpjK9vjUU9H9MvBLeUCAdeU9kZxp6Dk2GKl7hRj2uGg/viewform?usp=sf_link">Submit App To Olive OS SE Store</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://olivewebsoftware.github.io/oliveweb/index6.html">Support</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="https://www.youtube.com/channel/UCO7Y5aew9WBv4DjPr74v7eA">YouTube</a>
+    </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a class="w3-bar-item w3-button w3-padding-large" href="http://68.108.66.195:5000/connect/account/">OliveWeb Account</a>
+      <a class="w3-bar-item w3-button w3-padding-large" href="https://olivewebsoftware.github.io/oliveweb/oose/">Olive OS SE</a>
+      <a class="w3-bar-item w3-button w3-padding-large" href="https://olivewebsoftware.github.io/oliveweb/index5.html">Download Center</a>
+      <a class="w3-bar-item w3-button w3-padding-large" href="http://68.108.66.195:5000/connect/">OliveWeb CONNECT</a>
+       <a class="w3-bar-item w3-button w3-padding-large" href="https://docs.google.com/forms/d/e/1FAIpQLSciWCDbpjK9vjUU9H9MvBLeUCAdeU9kZxp6Dk2GKl7hRj2uGg/viewform?usp=sf_link">Submit Apps To Olive OS SE Store</a>
+       <a class="w3-bar-item w3-button w3-padding-large" href="https://olivewebsoftware.github.io/oliveweb/index6.html">Support</a>
+      <a class="w3-bar-item w3-button w3-padding-large" href="https://www.youtube.com/channel/UCO7Y5aew9WBv4DjPr74v7eA">YouTube</a>
     </div>
   </div>
+
+<div class="product-panels">
+    <!-- Hero Section -->
+<div class="hero-section">
+    <h1 class="hero-title"><span id="productName">Olive OS SE</span></h1>
+    <p class="hero-subtitle"><span id="productDescription">Introducing Olive OS SE!</span></p>
 </div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">&copy 2023 OliveWeb Software</h1>
+<!-- Content Section -->
+<div class="content-section">
+    <div class="w3-row-padding w3-padding-32">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h2><span id="productLinkText">Olive OS SE</span></h2>
+                <p>Thank you for choosing OliveWeb! Please click the Learn More button for more information about the product or service.</p>
+                <a id="productLink" class="w3-button w3-red w3-hover-white w3-padding-large" href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
 </div>
 
+</div>
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-   
- </div>
- <p>Template from: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="footer">
+    <div class="w3-container">
+        <p>&copy; 2023 OliveWeb Software</p>
+        <p>Template from: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
 </footer>
 
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+    // Array containing product information
+    const products = [
+        {
+            product: "Olive OS SE",
+            description: "Download Olive OS SE!",
+            linkText: "Download the latest version of Olive OS",
+            link: "https://olivewebsoftware.com/oose/"
+        },
+        {
+            product: "OliveWeb Music Player",
+            description: "Update to 2.0!",
+            linkText: "Download the OliveWeb Music Player 2.0 update today!",
+            link: "https://olivewebsoftware.com/omp/"
+        },
+        {
+            product: "OliveWeb Accounts",
+            description: "Create an OliveWeb Account!",
+            linkText: "Create an account now!",
+            link: "https://olivewebsoftware.com/connect"
+        }
+    ];
+
+    let currentIndex = 0;
+
+    // Function to update product information and link
+    function updateProductInfo() {
+        const currentProduct = products[currentIndex];
+        document.getElementById("productName").textContent = currentProduct.product;
+        document.getElementById("productDescription").textContent = currentProduct.description;
+        document.getElementById("productLinkText").textContent = currentProduct.linkText;
+        document.getElementById("productLink").setAttribute("href", currentProduct.link);
+
+        // Increment the index for the next iteration
+        currentIndex = (currentIndex + 1) % products.length;
+    }
+
+    // Initial content
+    updateProductInfo();
+
+    // Update product information at regular intervals
+    setInterval(updateProductInfo, 3000); // Change every 3 seconds
 </script>
+
 
 </body>
 </html>
