@@ -33,7 +33,6 @@
             height: 150px;
             padding: 10px;
             font-family: "Courier New", Courier, monospace;
-            display: none; /* Hide the textarea initially */
         }
         #backButton {
             position: absolute;
@@ -66,12 +65,12 @@
     </div>
     
     <script>
-        // Wait for the iframe to load and then copy its content into the textarea
-        document.getElementById('tosFrame').onload = function() {
-            var frameContent = document.getElementById('tosFrame').contentDocument.body.innerText;
-            document.getElementById('tos').value = frameContent;
-            document.getElementById('tos').style.display = 'block'; // Show the textarea
-        };
+        // Use fetch to load the content of tos.txt and set it in the textarea
+        fetch('tos.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('tos').value = data;
+            });
     </script>
 </body>
 </html>
