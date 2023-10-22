@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Presence API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        #container {
+            text-align: center;
+            margin: 20px;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+        #label {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #instructions {
+            text-align: left;
+            margin: 20px 0;
+        }
+        #usernameInput {
+            width: 70%; /* Adjust the width as needed */
+            padding: 10px;
+            margin: 10px auto;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        #code {
+            width: 70%; /* Adjust the width as needed */
+            height: 150px;
+            padding: 10px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        #backButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #backButton:hover {
+            background-color: #005bb9;
+        }
+    </style>
+</head>
+<body>
+    <a id="backButton" href="http://olivewebsoftware.com/messenger">Back</a>
+    
+    <div id="container">
+        <div id="label">Add OliveWeb Messenger presence to your site.</div>
+
+        <div id="instructions">
+            <b>Instructions:</b><br>
+            <p>Enter your OliveWeb Messenger username in the textbox below, then add this code to your site. NOTE: This will not work on HTTPS secured websites!</p>
+        </div>
+
+        <input type="text" id="usernameInput" placeholder="Enter your OliveWeb Messenger username">
+        <br>
+        <textarea id="code" rows="5" cols="50" readonly>
+<img src="http://oliveweb.ddns.net/connect/messenger/api/pr/pr.php?username=" width="100" height="50">
+        </textarea>
+    </div>
+    
+    <script>
+        const usernameInput = document.getElementById('usernameInput');
+        const codeTextarea = document.getElementById('code');
+
+        usernameInput.addEventListener('input', function () {
+            const username = usernameInput.value;
+            const imgSrc = `http://oliveweb.ddns.net/connect/messenger/api/pr/pr.php?username=${username}`;
+            codeTextarea.value = `<img src="${imgSrc}" width="100" height="50">`;
+        });
+    </script>
+</body>
+</html>

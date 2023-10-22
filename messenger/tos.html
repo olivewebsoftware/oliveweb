@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OliveWeb Messenger Terms of Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        #container {
+            text-align: center;
+            margin: 20px;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+        #label {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #instructions {
+            text-align: left;
+            margin: 20px 0;
+        }
+        #tos {
+            width: 70%; /* Adjust the width as needed */
+            height: 150px;
+            padding: 10px;
+            font-family: "Courier New", Courier, monospace;
+            display: none; /* Hide the textarea initially */
+        }
+        #backButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #backButton:hover {
+            background-color: #005bb9;
+        }
+    </style>
+</head>
+<body>
+    <a id="backButton" href="http://olivewebsoftware.com/messenger">Back</a>
+    
+    <div id="container">
+        <div id="label">OliveWeb Messenger Terms of Service</div>
+
+        <div id="instructions">
+            <p>You must agree to these terms to use the service.</p>
+        </div>
+        <br>
+        <textarea id="tos" rows="5" cols="50" readonly></textarea>
+        <iframe src="tos.txt" id="tosFrame"></iframe>
+    </div>
+    
+    <script>
+        // Wait for the iframe to load and then copy its content into the textarea
+        document.getElementById('tosFrame').onload = function() {
+            var frameContent = document.getElementById('tosFrame').contentDocument.body.innerText;
+            document.getElementById('tos').value = frameContent;
+            document.getElementById('tos').style.display = 'block'; // Show the textarea
+        };
+    </script>
+</body>
+</html>
