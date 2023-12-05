@@ -9,17 +9,40 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="shortcut icon" type="image/jpg" href="unnamed.jpg"/>
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+/* Your existing styles here */
+
+/* Sidebar styles */
+.w3-sidebar {
+  width: 120px;
+  background: #1f1f1f; /* Dark background color for the sidebar */
+  color: white; /* Text color for the sidebar */
+}
+
+/* Banner styles */
+.banner {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  text-align: center; /* Center text */
+  padding: 10px; /* Reduced padding around the text */
+  font-size: 14px; /* Reduced font size */
+}
+
+/* Your existing styles here */
 </style>
 </head>
 <body class="w3-black">
+
+<!-- Banner -->
+<div class="banner">
+  <p>We have updated the <a href="http://olivewebsoftware.com/messenger/tos.html" style="color: white; text-decoration: underline;">Terms of Service</a></p>
+</div>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="logo.png" style="width:100%">
+  <!-- ... (rest of your code) ... -->
+</nav>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -73,6 +96,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p class="w3-wide">Messaging; chat with your friends one on one</p>
     <div class="w3-white">
         <img src="messaging.png" alt="boy" class="w3-image" width="992" height="1108">
+    </div>
+    <p class="w3-wide"><p style="color:red; font-weight: bold;">NEW </p>Themes; make your chat look different</p>
+    <div class="w3-white">
+        <img src="themes.png" alt="boy" class="w3-image" width="992" height="1108">
     </div>
     <p class="w3-image">Contacts; spice up your friends list</p>
     <div class="">
