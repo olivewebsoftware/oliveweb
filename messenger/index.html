@@ -20,12 +20,13 @@
 
 /* Banner styles */
 .banner {
-  background-color: #4CAF50; /* Green background color */
-  color: white; /* White text color */
+  background-color: #FFFFFF; /* Green background color */
+  color: black; /* White text color */
   text-align: center; /* Center text */
   padding: 10px; /* Reduced padding around the text */
   font-size: 14px; /* Reduced font size */
 }
+
 
 /* Your existing styles here */
 </style>
@@ -34,8 +35,10 @@
 
 <!-- Banner -->
 <div class="banner">
-  <p>We have updated the <a href="http://olivewebsoftware.com/messenger/tos.html" style="color: white; text-decoration: underline;">Terms of Service</a></p>
+  <img src="android_logo.png" alt="Android Logo" style="width: 40px; height: 40px; margin-right: 5px;">
+  <p>OliveWeb Messenger for Android is now available! <a href="https://olivewebsoftware.com/messenger/mobile.html" style="color: #4CAF50; text-decoration: underline;">Download Now</a></p>
 </div>
+
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -145,6 +148,12 @@
 
 <!-- END PAGE CONTENT -->
 </div>
+
+   <script>
+    if (/Android/i.test(navigator.userAgent)) {
+      window.location.href = 'mobile.html';
+    }
+  </script>
 
 </body>
 </html>

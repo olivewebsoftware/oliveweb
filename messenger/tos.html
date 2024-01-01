@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OliveWeb Messenger Terms of Service</title>
     <style>
         body {
@@ -12,12 +14,12 @@
         #container {
             text-align: center;
             margin: 20px;
-            max-width: 600px;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             margin: 20px auto;
+            max-width: 80%; /* Adjust the maximum width as needed */
         }
         #label {
             font-size: 24px;
@@ -29,16 +31,15 @@
             margin: 20px 0;
         }
         #tos {
-            width: 70%; /* Adjust the width as needed */
+            width: 100%; /* Adjust the width as needed */
             height: 150px;
             padding: 10px;
             font-family: "Courier New", Courier, monospace;
             resize: vertical;
         }
         #backButton {
-            position: absolute;
-            top: 10px;
-            left: 10px;
+            display: block;
+            margin: 10px auto;
             text-decoration: none;
             padding: 10px;
             background-color: #0073e6;
@@ -62,7 +63,7 @@
             <p>You must agree to these terms to use the service.</p>
         </div>
         <br>
-        <textarea id="tos" rows="5" cols="50" readonly></textarea>
+        <textarea id="tos" rows="5" readonly></textarea>
     </div>
     
     <script>
