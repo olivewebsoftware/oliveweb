@@ -5,8 +5,8 @@
   "type": "web",
   "launch_path": "/messenger/kaios/index.html",
   "icons": {
-    "56": "/messenger/kaios/logo.png";
-    "112": "/messenger/kaios/logo.png";
+    "56": "/messenger/kaios/logo.png",;
+    "112": "/messenger/kaios/logo.png",;
   },
   "developer": {
     "name": "OliveWeb Software",
