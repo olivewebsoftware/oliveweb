@@ -3,7 +3,7 @@
   "name": "OliveWeb Messenger",
   "description": "Instant messaging service from OliveWeb",
   "type": "web",
-  "launch_path": "index.html",
+  "launch_path": "/index.html",
   "icons": {
     "56": "logo.png",
     "112": "logo.png"
