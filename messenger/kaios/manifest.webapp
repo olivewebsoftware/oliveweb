@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "name": "Messenger",
-  "description": "Instant messaging service from OliveWeb","
+  "description": "Instant messaging service from OliveWeb",
   "cursor": true,
   "type": "web",
   "launch_path": "/messenger/kaios/index.html",
