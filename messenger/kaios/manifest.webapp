@@ -2,7 +2,6 @@
   "version": "1.0.0",
   "name": "Messenger",
   "description": "Instant messaging service from OliveWeb",
-  "cursor": true,
   "type": "web",
   "launch_path": "/messenger/kaios/index.html",
   "icons": {
@@ -20,5 +19,6 @@
       "description": "IM your friends from anywhere"
     }
   },
-  "default_locale": "en-US"
+  "default_locale": "en-US",
+  "cursor": true
 }
