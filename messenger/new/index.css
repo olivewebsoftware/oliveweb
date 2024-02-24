@@ -1,71 +1,87 @@
 .home-container {
   width: 100%;
-  min-height: 100vh;
   display: flex;
+  overflow: auto;
+  min-height: 100vh;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-
 .home-text {
-  font-size: 100px;
-  font-family: Arial;
-  font-weight: 100;
+  top: 149px;
+  left: 117px;
   position: absolute;
-  top: 100px;
-  left: 50%; /* Adjust as needed */
-  transform: translateX(-50%);
-}
-
-.home-text01,
-.home-text02,
-.home-text07,
-.home-text08,
-.home-text09 {
   font-size: 30px;
-  position: absolute;
 }
-
 .home-text01 {
-  top: 266px;
-  left: 50%; /* Adjust as needed */
-  transform: translateX(-50%);
+  top: 236px;
+  left: 123px;
+  position: absolute;
+  font-size: 30px;
 }
-
-.home-text02 {
-  top: 353px;
-  left: 50%; /* Adjust as needed */
-  transform: translateX(-50%);
-}
-
-.home-image,
-.home-image1,
-.home-image2,
-.home-image3,
-.home-image4 {
+.home-image {
+  top: 129px;
+  left: 27px;
   width: 69px;
   height: 72px;
   position: absolute;
   object-fit: cover;
 }
-
-.home-image,
-.home-image1,
-.home-image2,
+.home-image1 {
+  top: 235px;
+  left: 29px;
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-text06 {
+  top: 149px;
+  left: 117px;
+  position: absolute;
+  font-size: 30px;
+}
+.home-image2 {
+  top: 129px;
+  left: 27px;
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-text07 {
+  top: 149px;
+  left: 117px;
+  position: absolute;
+  font-size: 30px;
+}
 .home-image3 {
-  top: 246px;
-  left: 50%; /* Adjust as needed */
-  transform: translateX(-50%);
+  top: 129px;
+  left: 27px;
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  object-fit: cover;
 }
-
 .home-image4 {
-  top: 454px;
-  left: 50%; /* Adjust as needed */
-  transform: translateX(-50%);
+  top: 337px;
+  left: 30px;
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  object-fit: cover;
 }
-
+.home-text08 {
+  top: 356px;
+  left: 126px;
+  position: absolute;
+  font-size: 30px;
+}
 .home-text09 {
-  top: 473px;
-  left: 50%; /* Adjust as needed */
-  transform: translateX(-50%);
+  top: 3px;
+  left: 14px;
+  position: absolute;
+  font-size: 100px;
+  font-family: "Arial";
+  font-weight: 100;
 }
