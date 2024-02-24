@@ -1,0 +1,87 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-text {
+  top: 100px;
+  left: 340px;
+  position: absolute;
+  font-size: 100px;
+  font-family: "Arial";
+  font-weight: 100;
+}
+.home-text01 {
+  top: 266px;
+  left: 485px;
+  position: absolute;
+  font-size: 30px;
+}
+.home-text02 {
+  top: 353px;
+  left: 491px;
+  position: absolute;
+  font-size: 30px;
+}
+.home-image {
+  top: 246px;
+  left: 395px;
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-image1 {
+  top: 352px;
+  left: 397px;
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-text07 {
+  top: 266px;
+  left: 485px;
+  position: absolute;
+  font-size: 30px;
+}
+.home-image2 {
+  top: 246px;
+  left: 395px;
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-text08 {
+  top: 266px;
+  left: 485px;
+  position: absolute;
+  font-size: 30px;
+}
+.home-image3 {
+  top: 246px;
+  left: 395px;
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-image4 {
+  top: 454px;
+  left: 398px;
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-text09 {
+  top: 473px;
+  left: 494px;
+  position: absolute;
+  font-size: 30px;
+}
