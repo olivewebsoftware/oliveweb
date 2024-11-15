@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - Oliveweb Messenger</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 32px; /* Increase font size */
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: block;
+            font-size: 22px; /* Increase font size */
+            margin: 10px 0;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 30px; /* Move footer closer */
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Omnibar styling */
+        .omnibar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .omnibar .left, .omnibar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .omnibar .left img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .omnibar .left {
+            margin-left: 20px;
+        }
+
+        .omnibar .left span {
+            font-size: 22px;
+        }
+
+        .omnibar .right {
+            margin-right: 30px;
+        }
+
+        .omnibar .right a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            font-weight: normal; /* Remove bold */
+        }
+
+        .omnibar .right a img {
+            height: 20px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Omnibar -->
+     <div class="omnibar">
+        <div class="left">
+            <img src="assets/logo.png" alt="Oliveweb Logo">
+            <span>oliveweb messenger</span>
+        </div>
+        <div class="right">
+            <a href="download.html"><img src="assets/download.png" alt="Download"> download</a>
+            <a href="features.html"><img src="assets/features.png" alt="Features"> features</a>
+            <a href="mobile.html"><img src="assets/mobile.png" alt="Mobile"> mobile</a>
+            <a href="more.html"><img src="assets/more.png" alt="More"> more</a>
+        </div>
+    </div>
+    <h1>More</h1>
+    <a href="tos.html">Terms of Service</a>
+    <a href="presence.html">Presence API</a>
+    <a href="https://discord.com/invite/2PDY5mVa6w" target="_blank">Discord Server</a>
+    <a href="mailto:olivewebsoftware@gmail.com?subject=Messenger Support">Contact Us</a>
+
+    <div class="footer">
+        Website Attributions:<br>
+        All icons on this website have been downloaded from flaticons.com
+    </div>
+
+</body>
+</html>

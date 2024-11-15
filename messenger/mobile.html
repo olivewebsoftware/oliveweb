@@ -1,9 +1,157 @@
-<html>
-    <head>
-        <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="1; url=https://olivewebsoftware.com/messenger/mobile/">
-    </head>
-    <body>
-      
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OliveWeb Messenger - Mobile</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px; /* To offset the omnibar */
+        }
+
+        /* Omnibar styling */
+        .omnibar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .omnibar .left, .omnibar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .omnibar .left img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        /* Move the text/logo to the left */
+        .omnibar .left {
+            margin-left: 20px;
+        }
+
+        /* Adjust size of 'oliveweb messenger' text */
+        .omnibar .left span {
+            font-size: 22px; /* Increased font size */
+        }
+
+        /* Move the right options more to the left */
+        .omnibar .right {
+            margin-right: 30px;
+        }
+
+        .omnibar .right a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .omnibar .right a img {
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        /* Main content */
+        .content {
+            text-align: left; /* Align text within the container to the left */
+            max-width: 600px;
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+
+        .content img {
+            max-width: 100%;
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+
+        .content .text {
+            margin-left: 20px; /* Move text to the right */
+        }
+
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .content a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            color: white;
+            background-color: #0095ff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Omnibar -->
+   <div class="omnibar">
+    <div class="left">
+        <img src="assets/logo.png" alt="Oliveweb Logo">
+        <span>oliveweb messenger</span>
+    </div>
+    <div class="right">
+        <a href="download.html"><img src="assets/download.png" alt="Download"> download</a>
+        <a href="features.html"><img src="assets/features.png" alt="Features"> features</a>
+        <a href="mobile.html"><img src="assets/mobile.png" alt="Mobile"> mobile</a>
+        <a href="more.html"><img src="assets/more.png" alt="More"> more</a>
+    </div>
+</div>
+
+    <!-- Main content -->
+    <div class="content">
+        <img src="assets/phones.png" alt="Phones">
+        <div class="text">
+            <h1>Take Messenger with you!</h1>
+            <p>No matter where you are, you can chat with your OliveWeb friends right from your phone!</p>
+            
+            <h2>Ditch SMS</h2>
+            <p>SMS is slow and costs money. With Messenger on your phone, you get a better texting experience that doesn’t require an expensive phone plan!</p>
+            
+            <h2>Low Data</h2>
+            <p>Messenger requires very little data to operate which saves money on your phone bill.</p>
+            
+            <p><strong>Download for your Android or KaiOS device:</strong></p>
+            <a class="button" href="https://olivewebsoftware.com/messenger/Messenger.apk">Download APK</a>
+            <a class="button" href="https://www.kaiostech.com/store/apps/?bundle_id=com.olivewebsoftware.olivewebmessenger">View in KaiStore</a>
+        </div>
+    </div>
+
+</body>
 </html>

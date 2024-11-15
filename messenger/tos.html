@@ -3,75 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OliveWeb Messenger Terms of Service</title>
+    <title>Terms of Service - OliveWeb Messenger</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
         }
-        #container {
-            text-align: center;
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            margin: 20px auto;
-            max-width: 80%; /* Adjust the maximum width as needed */
+
+        /* Omnibar styling */
+        .omnibar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 10;
         }
-        #label {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
+
+        .omnibar .left, .omnibar .right {
+            display: flex;
+            align-items: center;
         }
-        #instructions {
-            text-align: left;
-            margin: 20px 0;
+
+        .omnibar .left img {
+            height: 30px;
+            margin-right: 10px;
         }
-        #tos {
-            width: 100%; /* Adjust the width as needed */
-            height: 150px;
-            padding: 10px;
-            font-family: "Courier New", Courier, monospace;
-            resize: vertical;
+
+        .omnibar .left {
+            margin-left: 20px;
         }
-        #backButton {
-            display: block;
-            margin: 10px auto;
+
+        .omnibar .left span {
+            font-size: 22px;
+        }
+
+        .omnibar .right {
+            margin-right: 30px;
+        }
+
+        .omnibar .right a {
+            margin-left: 15px;
             text-decoration: none;
-            padding: 10px;
-            background-color: #0073e6;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            color: black;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
         }
-        #backButton:hover {
-            background-color: #005bb9;
+
+        .omnibar .right a img {
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        /* Terms of Service Container */
+        .tos-container {
+            flex: 1;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 70px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tos-container h1 {
+            text-align: center;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .tos-container textarea {
+            flex: 1;
+            width: 100%;
+            font-family: Georgia, serif; /* More professional font */
+            font-size: 12pt;
+            resize: none;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+
+        /* Mobile-specific adjustments for Android and KaiOS */
+        .mobile .tos-container {
+            width: 95%;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .mobile .tos-container h1 {
+            font-size: 18px;
+        }
+
+        .mobile .tos-container textarea {
+            font-size: 10pt;
+        }
+
+        /* Hide omnibar on mobile */
+        .mobile .omnibar {
+            display: none;
         }
     </style>
 </head>
 <body>
-    <a id="backButton" href="http://olivewebsoftware.com/messenger">Back</a>
-    
-    <div id="container">
-        <div id="label">OliveWeb Messenger Terms of Service</div>
 
-        <div id="instructions">
-            <p>You must agree to these terms to use the service.</p>
+    <!-- Omnibar (will be hidden on Android and KaiOS) -->
+    <div class="omnibar">
+        <div class="left">
+            <img src="assets/logo.png" alt="Oliveweb Logo">
+            <span>oliveweb messenger</span>
         </div>
-        <br>
-        <textarea id="tos" rows="5" readonly></textarea>
+        <div class="right">
+            <a href="download.html"><img src="assets/download.png" alt="Download"> download</a>
+            <a href="features.html"><img src="assets/features.png" alt="Features"> features</a>
+            <a href="mobile.html"><img src="assets/mobile.png" alt="Mobile"> mobile</a>
+            <a href="more.html"><img src="assets/more.png" alt="More"> more</a>
+        </div>
     </div>
-    
+
+    <!-- Terms of Service Content -->
+    <div class="tos-container">
+        <h1>Terms of Service</h1>
+        <br>
+        <textarea readonly>
+            <!-- Placeholder content for TOS -->
+            Loading Terms of Service...
+        </textarea>
+    </div>
+
     <script>
-        // Use fetch to load the content of tos.txt and set it in the textarea
+        // Detect Android and KaiOS user agents
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android|kaios/i.test(userAgent)) {
+            document.body.classList.add('mobile');
+        }
+
+        // Load TOS from tos.txt file into the textarea
         fetch('tos.txt')
             .then(response => response.text())
-            .then(data => {
-                document.getElementById('tos').value = data;
+            .then(text => {
+                document.querySelector('.tos-container textarea').textContent = text;
+            })
+            .catch(error => {
+                document.querySelector('.tos-container textarea').textContent = "Failed to load Terms of Service.";
             });
     </script>
 </body>

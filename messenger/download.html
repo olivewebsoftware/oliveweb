@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - OliveWeb Messenger</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white; /* White background */
+        }
+
+        /* Omnibar styling */
+        .omnibar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .omnibar .left, .omnibar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .omnibar .left img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .omnibar .left {
+            margin-left: 20px;
+        }
+
+        .omnibar .left span {
+            font-size: 22px;
+        }
+
+        .omnibar .right {
+            margin-right: 30px;
+        }
+
+        .omnibar .right a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .omnibar .right a img {
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        /* Main Content */
+        .content {
+            margin-top: 80px; /* Reduced margin to move content closer to omnibar */
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 15px; /* Slightly reduced margins */
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .download-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        .notice {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px; /* Slightly reduced margin */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Omnibar -->
+    <div class="omnibar">
+        <div class="left">
+            <img src="assets/logo.png" alt="Oliveweb Logo">
+            <span>oliveweb messenger</span>
+        </div>
+        <div class="right">
+            <a href="download.html"><img src="assets/download.png" alt="Download"> download</a>
+            <a href="features.html"><img src="assets/features.png" alt="Features"> features</a>
+            <a href="mobile.html"><img src="assets/mobile.png" alt="Mobile"> mobile</a>
+            <a href="more.html"><img src="assets/more.png" alt="More"> more</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Download</h1>
+        <h2>Download for Windows</h2>
+        <p>Windows 7+</p>
+        <br>
+        <a class="download-button" href="https://olivewebsoftware.com/messenger/OliveWebMessengerInstaller.zip" download>Download</a>
+        <br>
+        <br>
+        <p class="notice">NOTICE: Windows Defender may flag this as malware. This is a false positive. Please disable Windows Defender before downloading.</p>
+    </div>
+    
+</body>
+</html>

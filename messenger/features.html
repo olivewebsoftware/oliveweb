@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - OliveWeb Messenger</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white; /* White background */
+        }
+
+        /* Omnibar styling */
+        .omnibar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .omnibar .left, .omnibar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .omnibar .left img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .omnibar .left {
+            margin-left: 20px;
+        }
+
+        .omnibar .left span {
+            font-size: 22px;
+        }
+
+        .omnibar .right {
+            margin-right: 30px;
+        }
+
+        .omnibar .right a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .omnibar .right a img {
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        /* Main Content */
+        .content {
+            margin-top: 100px; /* Move content closer to the omnibar */
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .feature img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 10px;
+        }
+
+        .feature h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Omnibar -->
+    <div class="omnibar">
+        <div class="left">
+            <img src="assets/logo.png" alt="Oliveweb Logo">
+            <span>oliveweb messenger</span>
+        </div>
+        <div class="right">
+            <a href="download.html"><img src="assets/download.png" alt="Download"> download</a>
+            <a href="features.html"><img src="assets/features.png" alt="Features"> features</a>
+            <a href="mobile.html"><img src="assets/mobile.png" alt="Mobile"> mobile</a>
+            <a href="more.html"><img src="assets/more.png" alt="More"> more</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Features</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="features">
+            <div class="feature">
+                <img src="assets/gc.png" alt="Group chats">
+                <h2>Group chats</h2>
+                <p>Add as many people as you want.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/photoshare.png" alt="Photo sharing">
+                <h2>Photo sharing</h2>
+                <p>Send pictures up to 10MB with your friends.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/chatrooms.png" alt="Chat rooms">
+                <h2>Chat rooms</h2>
+                <p>Meet new people and create your own topics.</p>
+            </div>
+            <div class="feature">
+                <img src="assets/paint.png" alt="Chat themes">
+                <h2>Chat themes</h2>
+                <p>Change what your chat window looks like.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h1>...and more</h1>
+    </div>
+
+</body>
+</html>
